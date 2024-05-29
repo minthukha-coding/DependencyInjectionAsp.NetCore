@@ -1,4 +1,7 @@
 
+using DependencyInjectionInASP.NET_Core.Interfaces;
+using DependencyInjectionInASP.NET_Core.Services;
+
 namespace DependencyInjectionInASP.NET_Core
 {
     public class Program
@@ -13,6 +16,7 @@ namespace DependencyInjectionInASP.NET_Core
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddTransient<IMyService, MyService>();
 
             var app = builder.Build();
 
