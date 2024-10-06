@@ -1,8 +1,7 @@
-﻿namespace DependencyInjectionInASP.NET_Core.Interfaces
+﻿namespace DependencyInjectionInASP.NET_Core.Interfaces;
+
+public interface IMyService
 {
-    public interface IMyService
-    {
-        string GetNickName();
-        string GetMessage();
-    }
+    string GetNickName();
+    string GetMessage();
 }
